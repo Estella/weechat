@@ -4745,7 +4745,7 @@ irc_server_connect (struct t_irc_server *server)
         server,
         NULL);
     else
-    server->hook_connect = weechat_hook_connect_sctp (
+    server->hook_connect = weechat_hook_connect (
         proxy,
         server->current_address,
         server->current_port,
